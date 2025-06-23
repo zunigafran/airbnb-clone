@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 export const defaultStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FDFFFF',
+    backgroundColor: '#FFF',
   },
   inputField: {
     height: 44,
@@ -71,6 +71,14 @@ export const defaultStyles = StyleSheet.create({
   searchContainer: {
     backgroundColor: '#fff',
     height: 128,
+    elevation: 2,
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 6,
+    shadowOffset: {
+      width: 1,
+      height: 10,
+    }
   },
   actionRow: {
     flexDirection: 'row',
@@ -87,6 +95,7 @@ export const defaultStyles = StyleSheet.create({
     borderRadius: 24,
   },
   searchBtn: {
+    backgroundColor: '#fff',
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
@@ -95,8 +104,6 @@ export const defaultStyles = StyleSheet.create({
     flex: 1,
     padding: 12,
     borderRadius: 32,
-    backgroundColor: '#fff',
-
     elevation: 2,
     shadowColor: '#000',
     shadowOpacity: 0.12,
@@ -129,5 +136,95 @@ export const defaultStyles = StyleSheet.create({
     paddingBottom: 8,
     borderBottomColor: '#000',
     borderBottomWidth: 2,
+  },
+  listing: {
+    padding: 16,
+    gap: 4,
+  },
+  image: {
+    width: '100%',
+    height: 300,
+    borderRadius: 8,
+  },
+  pageImage: {
+    width: '100%',
+    height: 300,
+  },
+  infoContainer: {
+    padding: 24,
+    backgroundColor: '#fff'
+  },
+  name: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    fontFamily: 'mon-sb',
+  },
+  location: {
+    fontSize: 16,
+    marginTop: 12,
+    fontFamily: 'mon-sb',
+  },
+  rooms: {
+    fontSize: 16,
+    color: Colors.grey,
+    marginVertical: 4,
+    fontFamily: 'mon-sb',
+  },
+  ratings: {
+    fontSize: 16,
+    fontFamily: 'mon-sb,'
+  },
+  divider: {
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: Colors.grey,
+    marginVertical: 16,
+  },
+  host: {
+    width: 48,
+    height: 48,
+    borderRadius: 48,
+    backgroundColor: Colors.grey,
+  },
+  hostView: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+  },
+  description: {
+    fontSize: 16,
+    marginTop: 12,
+    fontFamily: 'mon',
+  },
+  footerText: {
+    height: '100%',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 4,
+  },
+  footerPrice: {
+    fontSize: 16,
+    fontFamily: 'mon-sb',
+  },
+  roundButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 50,
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: Colors.primary,
+  },
+  bar: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 10,
+  },
+  header: {
+    backgroundColor: '#fff',
+    height: 100,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderColor: Colors.grey,
   },
 });
